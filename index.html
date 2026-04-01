@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komal Kumari — Software Developer</title>
+    <meta name="description"
+        content="Portfolio of Komal Kumari – Software Developer skilled in Java, Python, C++, and Web Technologies. B.Tech CSE.">
+    <meta name="author" content="Komal Kumari">
+    <meta name="theme-color" content="#0a0f0d">
+    <meta property="og:title" content="Komal Kumari | Software Developer">
+    <meta property="og:description"
+        content="Software Developer specializing in full-stack development & distributed systems.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══ PARTICLES CANVAS ═══ -->
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <!-- ═══ NAVIGATION ═══ -->
+    <nav id="navbar">
+        <div class="nav-wrap">
+            <a href="#" class="logo">K<span>K</span><span>.</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon" id="themeIcon"></i>
+            </button>
+            <!-- <a href="#contact" class="nav-cta"><i class="fa-solid fa-paper-plane"></i> Let's Connect</a> -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <header id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge" id="heroBadge">
+                    <span class="badge-dot"></span>
+                    Open to Opportunities
+                </div>
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name" id="heroName">Komal Kumari</h1>
+                <div class="hero-role-wrap">
+                    <span class="hero-role-prefix">I'm a </span>
+                    <span class="hero-typing" id="heroTyping"></span>
+                    <span class="typing-cursor">|</span>
+                </div>
+                <p class="hero-sub">
+                    <strong>Software Developer</strong> focused on building <strong>clean, impactful, and
+                        reliable</strong> software solutions that solve real problems.
+                    B.Tech CSE student at Lovely
+                    Professional University.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-fill">
+                        <i class="fa-solid fa-rocket"></i> View Projects
+                        <span class="btn-shine"></span>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">
+                        <i class="fa-solid fa-envelope"></i> Contact Me
+                    </a>
+                    <div style="display: flex; gap: 0.8rem;">
+                        <a href="KomalCV.pdf" target="_blank" class="btn btn-outline-subtle">
+                            <i class="fa-solid fa-eye"></i> Resume
+                        </a>
+                        <!-- <a href="Komal_resume.pdf" download="Komal_resume.pdf" class="btn btn-outline-subtle" style="padding-left: 1.2rem; padding-right: 1.2rem;" aria-label="Download Resume">
+                            <i class="fa-solid fa-download"></i>
+                        </a> -->
+                    </div>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/KomalSangwan30" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/komalsangwan/" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:komalsangwan81@gmail.com" aria-label="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+919350410399" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-frame">
+                    <div class="profile-orbit orbit-1"></div>
+                    <div class="profile-orbit orbit-2"></div>
+                    <div class="profile-orbit orbit-3"></div>
+                    <div class="profile-glow"></div>
+                    <div class="profile-img-wrap">
+                        <img src="images/dp.jpeg" alt="Komal Kumari" class="profile-img" id="profileImg">
+                    </div>
+                    <!-- <div class="float-badge fb-1"><i class="fa-brands fa-node-js"></i></div>
+                    <div class="float-badge fb-2"><i class="fa-brands fa-react"></i></div>
+                    <div class="float-badge fb-3"><i class="fa-brands fa-docker"></i></div>
+                    <div class="float-badge fb-4"><i class="fa-solid fa-database"></i></div> -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section id="about" class="sec">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">01</span>
+                <h2>About Me</h2>
+                <div class="sec-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-main reveal">
+                    <p class="about-lead">
+                        I am a <strong>Software Engineering student</strong> at LPU, dedicated to building applications
+                        that are <strong>clean, functional, and reliable</strong>. As a <strong>documentation-first
+                            developer</strong>, I prioritize understanding the "why" before the "how," ensuring every
+                        system I build is <strong>stable, readable, and easy to maintain</strong> through rigorous
+                        testing and a structured approach.
+                    </p>
+
+                    <p>
+                        Currently pursuing an <strong>Engineering Minor in Data Science</strong>, I am fascinated by
+                        the <strong>intersection of traditional software development and intelligent systems</strong>.
+                        My goal is to create <strong>adaptive software</strong> that solves real-world problems by
+                        blending data-driven insights with solid engineering principles to deliver <strong>genuine
+                            value</strong>.
+                    </p>
+                </div>
+                <div class="about-highlights reveal">
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-code"></i></div>
+                        <div>
+                            <h4>Basics that matter</h4>
+                            <p>Focusing on strong DSA and CS principles to ensure every project starts with a solid
+                                technical base</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                        <div>
+                            <h4>Intelligent Systems</h4>
+                            <p>Engineering minor in Data Science — blending AI with real-world software</p>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon"><i class="fa-solid fa-heart"></i></div>
+                        <div>
+                            <h4>Passion-Driven</h4>
+                            <p>Genuinely invested in the craft of coding—focusing on building reliable applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills" class="sec sec-alt">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">02</span>
+                <h2>Technical Skills</h2>
+                <div class="sec-line"></div>
+            </div>
+            <div class="skills-grid reveal">
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>C++</span></div>
+                        <div class="skill-chip"><span>Java</span></div>
+                        <div class="skill-chip"><span>C</span></div>
+                        <div class="skill-chip"><span>Python</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip chip-glow"><span>HTML</span></div>
+                        <div class="skill-chip chip-glow"><span>CSS</span></div>
+                        <div class="skill-chip chip-glow"><span>JavaScript</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip"><span>MySQL</span></div>
+                        <div class="skill-chip"><span>DBMS</span></div>
+                        <div class="skill-chip"><span>Data Management (MS Excel)</span></div>
+                        <div class="skill-chip"><span>Power BI</span></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-cat-header">
+                        <i class="fa-solid fa-user-group"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-chip chip-glow"><span>Problem-Solving Skills</span></div>
+                        <div class="skill-chip chip-glow"><span>Teamwork</span></div>
+                        <div class="skill-chip"><span>Adaptability</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ PROJECTS ═══ -->
+    <section id="projects" class="sec">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">03</span>
+                <h2>Featured Projects</h2>
+                <div class="sec-line"></div>
+            </div>
+            <div class="projects-list">
+                <div class="proj-card reveal">
+                    <div class="proj-number">01</div>
+                    <div class="proj-card-content">
+                        <div class="proj-top-row">
+                            <span class="proj-badge">Machine Learning / Web</span>
+                            <span class="proj-date">Feb 2026</span>
+                        </div>
+                        <h3 class="proj-title">Smart Harvest</h3>
+                        <p class="proj-desc">Developed a <strong>machine learning-based web application</strong> to
+                            recommend the most suitable crop based on soil nutrients and environmental conditions.
+                            Trained and deployed an ML model using agricultural dataset (NPK values, temperature,
+                            humidity, pH, rainfall) for accurate crop prediction. Integrated the trained model into a
+                            <strong>Django web application</strong>.
+                        </p>
+                        <div class="proj-stack">
+                            <span>Django</span><span>Machine Learning</span><span>Python</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="https://github.com/KomalSangwan30/Smart-Harvest" target="_blank" class="proj-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj-card reveal">
+                    <div class="proj-number">02</div>
+                    <div class="proj-card-content">
+                        <div class="proj-top-row">
+                            <span class="proj-badge">System Monitor</span>
+                            <span class="proj-date">Mar 2025</span>
+                        </div>
+                        <h3 class="proj-title">AI Powered OS Monitor</h3>
+                        <p class="proj-desc">Built a real-time system monitor to track CPU, memory, disk, and network
+                            speed using <strong>Flask and psutil</strong>. Integrated AI-style predictions to forecast
+                            overload and detect abnormal resource usage. Implemented heavy-process detection with
+                            automated optimization suggestions for system stability.</p>
+                        <div class="proj-stack">
+                            <span>Python</span><span>Flask</span><span>psutil</span><span>HTML/CSS</span><span>REST
+                                APIs</span>
+                        </div>
+                        <div class="proj-links">
+                            <a href="https://github.com/KomalSangwan30/AI-Powered-OS-Monitor" target="_blank" class="proj-link">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="sec sec-alt">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">04</span>
+                <h2>Extra-Curricular Activities & Education</h2>
+                <div class="sec-line"></div>
+            </div>
+
+            <div class="exp-timeline">
+                <div class="tl-item reveal">
+                    <div class="tl-marker">
+                        <div class="tl-pulse"></div>
+                    </div>
+                    <div class="tl-content">
+                        <div class="tl-head">
+                            <div>
+                                <h3>Cleared regional round</h3>
+                                <p class="tl-org">SAP HACKFEST'25</p>
+                            </div>
+                            <span class="tl-date">Apr 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tl-item reveal">
+                    <div class="tl-marker"></div>
+                    <div class="tl-content">
+                        <div class="tl-head">
+                            <div>
+                                <h3>Participated in Hackathon</h3>
+                                <p class="tl-org">HackWithVertos 1.0 A 24 hr. Hackathon by Department of Student
+                                    Organizations, LPU</p>
+                            </div>
+                            <span class="tl-date">Feb 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="edu-row edu-row-3 reveal" style="margin-top: 4rem;">
+                <div class="edu-card">
+                    <div class="edu-badge"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="edu-info">
+                        <h4>Lovely Professional University</h4>
+                        <p>B.Tech — CSE</p>
+                        <div class="edu-details">
+                            <span><i class="fa-solid fa-location-dot"></i> Punjab, India</span>
+                            <span><i class="fa-regular fa-calendar"></i> 2023 — Present</span>
+                        </div>
+                    </div>
+                    <div class="edu-score">7.46 <small>CGPA</small></div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-badge"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-info">
+                        <h4>K.C.M Sr. Sec. School</h4>
+                        <p>Intermediate (12th)</p>
+                        <div class="edu-details">
+                            <span><i class="fa-solid fa-location-dot"></i> Charkhi Dadri, Haryana</span>
+                            <span><i class="fa-regular fa-calendar"></i> 2021 — 2022</span>
+                        </div>
+                    </div>
+                    <div class="edu-score">94% <small>XII</small></div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-badge"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-info">
+                        <h4>K.C.M Sr. Sec. School</h4>
+                        <p>Matriculation (10th)</p>
+                        <div class="edu-details">
+                            <span><i class="fa-solid fa-location-dot"></i> Charkhi Dadri, Haryana</span>
+                            <span><i class="fa-regular fa-calendar"></i> 2019 — 2020</span>
+                        </div>
+                    </div>
+                    <div class="edu-score">97% <small>X</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ACHIEVEMENTS ═══ -->
+    <section id="achievements" class="sec">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">05</span>
+                <h2>Achievements & Certifications</h2>
+                <div class="sec-line"></div>
+            </div>
+
+            <div class="ach-split" style="display: flex; justify-content: center;">
+                <div class="ach-col reveal" style="width: 100%; max-width: 800px;">
+                    <h3 class="ach-col-title"><i class="fa-solid fa-certificate"></i> Certifications</h3>
+                    <div class="ach-stack">
+                        <div class="ach-row">
+                            <div class="ach-text">
+                                <strong>ChatGPT-4 Prompt Engineering & Generative AI</strong>
+                                <span>Infosys Springboard Wingspan</span>
+                            </div>
+                            <button class="cert-eye" data-img="images/gpt.png"
+                                aria-label="View Certificate">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <span class="ach-date">Aug 2025</span>
+                        </div>
+                        <div class="ach-row">
+                            <div class="ach-text">
+                                <strong>Data Structures & Algorithms Using Java</strong>
+                                <span>CipherSchools</span>
+                            </div>
+                            <button class="cert-eye" data-img="images/java.png"
+                                aria-label="View Certificate">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <span class="ach-date">Jul 2025</span>
+                        </div>
+                        <div class="ach-row">
+                            <div class="ach-text">
+                                <strong>Cloud Computing</strong>
+                                <span>NPTEL, MoE, Govt. of India</span>
+                            </div>
+                            <button class="cert-eye" data-img="images/nptel.png"
+                                aria-label="View Certificate">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <span class="ach-date">Apr 2025</span>
+                        </div>
+                        <div class="ach-row">
+                            <div class="ach-text">
+                                <strong>Data Structures and Analysis</strong>
+                                <span>neo-Colab, LPU</span>
+                            </div>
+                            <button class="cert-eye" data-img="images/dsa.png"
+                                aria-label="View Certificate">
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+                            <span class="ach-date">Dec 2024</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact" class="sec sec-alt">
+        <div class="container">
+            <div class="sec-header reveal">
+                <span class="sec-num">06</span>
+                <h2>Get In Touch</h2>
+                <div class="sec-line"></div>
+            </div>
+            <div class="contact-wrap reveal">
+                <div class="contact-left">
+                    <p class="contact-lead">Looking for a <strong>software developer</strong> who builds reliable,
+                        production-ready systems? Let's talk.</p>
+                    <div class="contact-detail">
+                        <a href="mailto:komalsangwan81@gmail.com"><i class="fa-solid fa-envelope"></i>
+                            komalsangwan81@gmail.com</a>
+                        <a href="tel:+919350410399"><i class="fa-solid fa-phone"></i> +91 9350410399</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <a href="https://www.linkedin.com/in/komalsangwan/" target="_blank" rel="noopener"
+                        class="contact-social-card">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>komal2530</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right arr"></i>
+                    </a>
+                    <a href="https://github.com/KomalSangwan30" target="_blank" rel="noopener" class="contact-social-card">
+                        <i class="fa-brands fa-github"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>komal2530</span>
+                        </div>
+                        <i class="fa-solid fa-arrow-right arr"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <div class="container footer-row">
+            <span>&copy; 2026 Komal Kumari</span>
+            <span>Designed with purpose & passion.</span>
+        </div>
+    </footer>
+
+    <!-- ═══ IMAGE LIGHTBOX ═══ -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
